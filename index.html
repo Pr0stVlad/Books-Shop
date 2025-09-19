@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MEGOGO BOOKS — Статичний прототип</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js"></script>
+  <link rel="icon" type="img/png" href="img/logo.png">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MEGOGO BOOKS</a>
+
+      <form class="search" onsubmit="return false;">
+        <input id="q" type="search" placeholder="Пошук книг, авторів..." />
+        <button id="searchBtn" type="button">🔍</button>
+      </form>
+
+      <nav class="top-nav">
+        <a class="active" href="index.html">Каталог</a>
+        <a href="index1.html">Контакти</a>
+        <button id="cartBtn">Кошик (<span id="cartCount">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Знижка -10% на безліч книжок для передплатників MEGOGO</h1>
+        <p>Оглянь новинки, бестселери та акції.</p>
+      </div>
+    </section>
+
+    <section class="catalog container" aria-label="каталог">
+      <div class="catalog-header">
+        <h2>Рекомендовано</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Усі</button>
+          <button class="filter" data-filter="sale">Акція</button>
+          <button class="filter" data-filter="new">Новинка</button>
+        </div>
+      </div>
+
+      <div id="products" class="product-grid">
+        <article class="card product" data-tags="sale bestseller">
+          <img src="img/Запізно.jpeg" alt="Запізно — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Запізно</h3>
+            <p class="author">Коллін Гувер</p>
+            <p class="price"><span class="current">360 грн</span> <span class="old">450 грн</span></p>
+            <button class="add-to-cart" data-title="Запізно" data-price="360">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="sale bestseller">
+          <img src="img/Роуг.jpeg" alt="Угода — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Rouge</h3>
+            <p class="author">Мона Авад</p>
+            <p class="price"><span class="current">480 грн</span> <span class="old">520 грн</span></p>
+            <button class="add-to-cart" data-title="Rouge" data-price="480">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="new">
+          <img src="img/мізері.jpeg" alt="Пеґґі — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Мізері</h3>
+            <p class="author">Стівен Кінг</p>
+            <p class="price"><span class="current">550 грн</span></p>
+            <button class="add-to-cart" data-title="Стівен Кінг" data-price="550">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="sale bestseller">
+          <img src="img/Гуцули.jpeg" alt="Запізно — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Гуцули</h3>
+            <p class="author">.</p>
+            <p class="price"><span class="current">390 грн</span> <span class="old">450 грн</span></p>
+            <button class="add-to-cart" data-title="Запізно" data-price="390">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="new">
+          <img src="img/Місто1.jpeg" alt="Угода — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Місто Скла</h3>
+            <p class="author">Кассандра Клер</p>
+            <p class="price"><span class="current">600 грн</span></p>
+            <button class="add-to-cart" data-title="Місто Скла" data-price="600">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="new">
+          <img src="img/Пушин.png" alt="Пеґґі — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Порадник Пушин з усього на світі</h3>
+            <p class="author">Клер Белтон</p>
+            <p class="price"><span class="current">340 грн</span></p>
+            <button class="add-to-cart" data-title="Пушин" data-price="340">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="sale bestseller">
+          <img src="img/Небо.jpeg" alt="Запізно — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Порожнє небо</h3>
+            <p class="author">Радек Рак</p>
+            <p class="price"><span class="current">420 грн</span> <span class="old">490 грн</span></p>
+            <button class="add-to-cart" data-title="Запізно" data-price="420">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="sale bestseller">
+          <img src="img/Одісея.png" alt="Угода — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Одісея</h3>
+            <p class="author">Стівен Фрай</p>
+            <p class="price"><span class="current">320 грн</span> <span class="old">400 грн</span></p>
+            <button class="add-to-cart" data-title="Одісея" data-price="320">До кошика</button>
+          </div>
+        </article>
+
+        <article class="card product" data-tags="new">
+          <img src="img/Рота.jpeg" alt="Пеґґі — обкладинка" />
+          <div class="card-body">
+            <h3 class="title">Чорна рота</h3>
+            <p class="author">Ґлен Кук</p>
+            <p class="price"><span class="current">580 грн</span></p>
+            <button class="add-to-cart" data-title="Чорна рота" data-price="580">До кошика</button>
+          </div>
+        </article>
+
+        <!-- Дублікатів можна додати скільки потрібно -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>MEGOGO BOOKS</h4>
+        <p>Про нас • Акції • Співпраця</p>
+      </div>
+      <div>
+        <h4>Сервіси</h4>
+        <p>Доставка й оплата • Повернення й обмін</p>
+      </div>
+      <div>
+        <small>2025 © MEGOGO. Усі права захищені.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
