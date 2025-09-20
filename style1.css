@@ -51,7 +51,7 @@ body {
     text-decoration: underline;
 }
 
-/* Контент */
+
 .contacts-page {
     background: #fff;
     border-radius: var(--radius);
@@ -64,7 +64,6 @@ body {
     margin: 7px 0;        
 }
 
-/* Форма */
 form {
     margin-top: 32px;      
     display: flex;
@@ -92,7 +91,7 @@ form textarea {
     background: #094fbf;
 }
 
-/* Футер */
+
 .site-footer {
     background: #fff;
     border-top: 1px solid #e6e9ef;
@@ -104,4 +103,5 @@ form textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
